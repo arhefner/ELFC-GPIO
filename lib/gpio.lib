@@ -1,0 +1,86 @@
+.big
+{Cdelay_ms
+:0000 17 47 af 07 bf 27 27 f8 00 bd f8 3e ad 4d bc 0d
+:0010 ac ca 00 1e 9c ca 00 1e f8 0f bc f8 a0 ac 8c ff
+:0020 08 ad 9c 7f 01 bd f8 90 ac f8 f9 bc 8f ca 00 34
+:0030 9f c2 00 50 2f 8d 52 8c f4 ac 9d 52 9c 74 bc cb
+:0040 00 2c 8c ff 78 ac 9c 7f 00 bc c3 00 42 c0 00 2c
+:0050 d5
++0012
++0016
++002e
++0032
++0040
++004b
++004e
+}
+.big
+{Cdelay_s
+:0000 17 47 af 07 bf 27 27 8f ca 00 0f 9f c2 00 29 2f
+?Cdelay_ms 001d
+:0010 9f 73 8f 73 e7 f8 03 73 f8 e8 73 e2 d4 00 00 17
+:0020 17 60 72 af f0 bf c0 00 07 d5
++0009
++000d
++0027
+}
+.big
+.align qword
+{Cef1_asserted
+:0000 f8 00 ba aa 3c 07 1a d5
+<0005
+}
+.big
+.align qword
+{Cef2_asserted
+:0000 f8 00 ba aa 3d 07 1a d5
+<0005
+}
+.big
+.align qword
+{Cef3_asserted
+:0000 f8 00 ba aa 3e 07 1a d5
+<0005
+}
+.big
+.align qword
+{Cef4_asserted
+:0000 f8 00 ba aa 3f 07 1a d5
+<0005
+}
+.big
+{Cinp_port
+=gpio_isel 0010
+=gpio_irst 001d
+:0000 f8 00 bf f8 13 af e7 60 72 fa 07 f9 68 5f 07 ce
+:0010 65 27 27 69 aa 17 07 27 27 c2 00 21 e3 65 00 f8
+:0020 00 ba e2 d5
+^0001 13
+v0004
++001a
+}
+.big
+{Cout_port
+=gpio_osel 0010
+=gpio_orst 001d
+:0000 f8 00 bf f8 13 af e7 60 72 fa 07 f9 60 5f 07 ce
+:0010 65 27 17 61 27 27 07 27 27 c2 00 1f e3 65 00 e2
+:0020 d5
+^0001 13
+v0004
++001a
+}
+.big
+{Cset_exp_port
+/gpio_osel 0009
+\gpio_osel 000c
+:0000 17 07 27 fa 07 f9 60 ae f8 00 bf f8 00 af 8e 5f
+/gpio_orst 0011
+\gpio_orst 0014
+/gpio_isel 0019
+\gpio_isel 001c
+:0010 f8 00 bf f8 00 af 8e 5f f8 00 bf f8 00 af 8e 5f
+/gpio_irst 0021
+\gpio_irst 0024
+:0020 f8 00 bf f8 00 af 8e 5f d5
+}

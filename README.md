@@ -429,8 +429,10 @@ These are the images in `images/` to try `show` with:
 
 | Image | |
 |-------|-|
-| `hires.img`, `imp.img` | The images of Elf-Elfos-oled. |
-| `blinky.img`, `starship.img` | Pixie images, 64 by 32. |
+| `hires.img` | Higher resolution drawing of the starship Enterprise. |
+| `imp.img` | Graphics logo featuring imp character. |
+| `blinky.img` | Sample PAC-MAN game board. |
+| `starship.img` | Classic Pixie graphics starship image. |
 | `mona.img` | The Mona Lisa in black and white dots. It is a portrait, upright when the display is turned so that its left edge is up. |
 
 `mkimage.py` makes an image like `mona.img` from any picture, and needs the

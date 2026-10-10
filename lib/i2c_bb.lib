@@ -1,0 +1,54 @@
+.big
+.align page
+{i2c_driver
+.requires Cout_port
+=i2c_dinit 0000
+=i2c_dopen 0043
+=i2c_dstart 004c
+=i2c_dwrite 0072
+=i2c_dread 006d
+=i2c_dstop 009d
+=i2c_dclear 006b
+:0000 17 47 fa 07 f9 60 ae 07 27 27 aa f8 00 bf bc f8
+/gpio_osel 001e
+:0010 38 af 4f 32 1a ac 8e 5c 30 12 8a 32 25 f8 00 bf
+\gpio_osel 0021
+:0020 f8 00 af 0f c8 f8 f8 ae f8 44 ac 8e 5c 1c 8a 5c
+?i2c_clear 0036
+:0030 f8 b0 ac 8e 5c c0 00 00 50 55 5c 61 83 88 95 a1
+:0040 a6 ad 00 ed f8 00 e2 f8 00 ba 30 9c 9a fa 7f 52
+:0050 61 22 fa bf 52 61 22 37 57 f9 80 52 61 22 f9 40
+:0060 52 61 22 ba 17 07 27 7e aa 30 72 ff 00 f8 ff aa
+:0070 30 74 ff 00 f8 09 ae 8a 7e aa 9a 33 80 f9 80 c8
+:0080 fa 7f 52 61 22 fa bf 52 61 22 37 8a fc 00 36 92
+:0090 ff 00 f9 40 52 61 22 ba 2e 8e 3a 77 d3 9a f9 80
+:00a0 52 61 22 fa bf 52 61 22 37 a8 fa 7f 52 61 22 ed
+:00b0 f8 00 e2 30 9c
+^000c 38
+v0010
+<0014
+<0019
+<001c
+v0029
+v0031
+v0038
+v0039
+v003a
+v003b
+v003c
+v003d
+v003e
+v003f
+v0040
+v0041
+<004b
+<0058
+<006a
+<0071
+<007c
+<008b
+<008f
+<009b
+<00a9
+<00b4
+}

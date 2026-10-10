@@ -24,7 +24,7 @@ $(TARGET): $(OBJS)
 	mkdir -p ../lib
 	cat $^ > ../lib/$@
 
-%.prg: %.asm gpio.inc
+%.prg: %.asm gpio.inc i2c.inc
 	$(ASM) $(ASMFLAGS) $<
 
 clean:

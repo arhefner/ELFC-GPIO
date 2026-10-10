@@ -8,6 +8,10 @@
 ; The port is part of the opcode of the output instructions that select
 ; the group in out_port and inp_port, so those four instructions are
 ; replaced here. The output instruction is kept in RE.0 meanwhile.
+;
+; The linker takes a procedure from the library when the name of the
+; procedure is used, not for a label inside it, so the two procedures
+; are named here to have them in the program.
 
             extrn gpio_osel
             extrn gpio_orst
@@ -15,6 +19,9 @@
             extrn gpio_irst
 
             proc  Cset_exp_port
+
+.link .requires Cout_port
+.link .requires Cinp_port
 
             inc   r7                    ; get the port
             ldn   r7

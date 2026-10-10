@@ -2,6 +2,9 @@
 src/*.lst
 src/*.build
 src/*.prg
+drivers/*.lst
+drivers/*.build
+drivers/*.prg
 examples/*.asm
 examples/*.lst
 examples/*.build
@@ -10,4 +13,16 @@ examples/*.sym
 examples/*.prg
 examples/*.elfos
 examples/gpio.lib
+examples/i2c_*.lib
 examples/demo
+examples/led7.lib
+examples/ssd1305.lib
+examples/ledclock
+examples/play
+examples/show
+examples/dispoff
+examples/*/*.asm
+examples/*/*.lst
+examples/*/*.build
+examples/*/*.prg
+examples/*/*.lib
